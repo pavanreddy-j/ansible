@@ -1,7 +1,6 @@
-- name: play book
+- name: hello playbook
   hosts: web
-  tasks
+  tasks:
   - name: print Hello World
     ansible.builtin.ping:
       msg: "Hello world"
-      
