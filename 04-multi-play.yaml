@@ -1,0 +1,15 @@
+- name: PLAY1
+  host: local
+  connection: local # managing its own node, no need of credentails
+  tasks:
+  - name: PLAY1 and TASK1
+    anisible.builtin.debug:
+      msg: "Hello from PLAY1 and TASK1"
+
+      - name: PLAY2
+      host: local
+      connection: local # managing its own node, no need of credentails
+      tasks:
+      - name: PLAY2 and TASK1
+        anisible.builtin.debug:
+          msg: "Hello from PLAY2 and TASK1"
