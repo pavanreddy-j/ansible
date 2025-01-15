@@ -3,6 +3,5 @@
   connection: local
   tasks:
   - name: Print the variable
-    ansible.biultin.debug:
+    ansible.builtin.debug:
       msg: "course is devops, duration is 120 hrs, trainer is siva"
-      
