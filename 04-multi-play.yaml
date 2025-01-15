@@ -1,5 +1,5 @@
 - name: PLAY1
-  hosts: web
+  hosts: local
   connection: local # managing its own node, no need of credentails
   tasks:
   - name: PLAY1 and TASK1
@@ -7,7 +7,7 @@
       msg: "Hello from PLAY1 and TASK1"
 
 - name: PLAY2
-  hosts: web
+  hosts: local
   connection: local # managing its own node, no need of credentails
   tasks:
   - name: PLAY2 and TASK1
