@@ -1,8 +1,8 @@
 - name: variables
   hosts: local
   connection: local
-  vars:
-    GREET: "PLAY"
+  # vars:
+  #   GREET: "PLAY"
   # vars_files:
   #   - vars.yaml
   # vars_prompt:
@@ -20,4 +20,5 @@
 # task level
 # files
 # prompt
+# play
 
