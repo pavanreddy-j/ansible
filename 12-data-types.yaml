@@ -11,9 +11,9 @@
     - git
     live: true
     tools: 
-    ci: jenkins
-    cloud: aws
-    containerization: docker
+      ci: jenkins
+      cloud: aws
+      containerization: docker
   tasks:
   - name: Print course information
     ansible.builtin.debug:
