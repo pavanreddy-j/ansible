@@ -7,8 +7,8 @@
     - vars.yaml
   vars_prompt:
   - name: GREET
-      prompt: Enter the value
-      private: false
+    prompt: Enter the value
+    private: false
   tasks: 
   - name: print the variable
     vars:
