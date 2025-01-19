@@ -11,17 +11,17 @@
 #     - Ramesh
 
 # Install packages
-- name: Install packages
+- name: install packages
   hosts: web
   become: yes
   tasks:
-  - name: Install packages
+  - name: Iistall packages
     ansible.built.in.packages:
-      name: {{ items }}
+      name: "{{ items }}"
       state: installed
-  loop:
-  - gcc
-  - git
-  - mysql
-  - zip
+    loop:
+    - gcc
+    - git
+    - mysql
+    - zip
 
