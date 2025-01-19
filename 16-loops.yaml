@@ -15,8 +15,8 @@
   hosts: web
   become: yes
   tasks:
-  - name: Iistall packages
-    ansible.built.in.packages:
+  - name: install packages
+    ansible.builtin.packages:
       name: "{{ items }}"
       state: installed
     loop:
