@@ -17,7 +17,7 @@
   tasks:
   - name: install packages
     ansible.builtin.package:
-      name: "{{ items }}"
+      name: "{{ item }}"
       state: installed
     loop:
     - gcc
