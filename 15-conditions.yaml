@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: install ndinx if RHEL
-    ansible.builtin.debug:
+    ansible.builtin.dnf:
       name: nginx
       state: installed
     when: ansible_os_family == "RedHat"
