@@ -10,18 +10,32 @@
 #     - chouda
 #     - Ramesh
 
-# Install packages
+  # Install packages
+# - name: install packages
+#   hosts: web
+#   become: yes
+#   tasks:
+#   - name: install packages
+#     ansible.builtin.package:
+#       name: "{{ item }}"
+#       state: installed
+#     loop:
+#     - gcc
+#     - git
+#     - mysql
+#     - zip
+
+  # Install/uninstall packages
 - name: install packages
   hosts: web
   become: yes
   tasks:
   - name: install packages
     ansible.builtin.package:
-      name: "{{ item }}"
-      state: installed
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
     loop:
-    - gcc
-    - git
-    - mysql
-    - zip
-
+    - { name: 'gcc', state: 'absent' }
+    - { name: 'git', state: 'present' }
+    - { name: 'mysql', state: 'absent' }
+    - { name: 'zip', state: 'pesent' }
