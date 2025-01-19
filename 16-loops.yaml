@@ -38,4 +38,4 @@
     - { name: 'gcc', state: 'absent' }
     - { name: 'git', state: 'present' }
     - { name: 'mysql', state: 'absent' }
-    - { name: 'zip', state: 'pesent' }
+    - { name: 'zip', state: 'present' }
