@@ -16,7 +16,7 @@
   become: yes
   tasks:
   - name: Install packages
-    ansible.built.in.debug:
+    ansible.built.in.packages:
       name: {{ items }}
       state: installed
   loop:
