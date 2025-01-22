@@ -50,6 +50,6 @@
 
   - name: check ipaddress is valis or not
     vars:
-      IP: "234.345.234.2"
+      IP: "123.234.1.1"
     ansible.builtin.debug:
       msg: " {{ IP | ansible.utils.ipaddr }}"
