@@ -47,3 +47,9 @@
       Numbers: [1, 345, 234, 3456, 1234567]
     ansible.builtin.debug:
       msg: "min is: {{ Numbers | min }} max is: {{ Numbers | max }}"
+
+  - name: check ipaddress is valis or not
+    vars:
+      IP: "234.345.234.2"
+    ansible.builtin.debug:
+      msg: " {{ IP | ansible.utils.ipaddr }}"
