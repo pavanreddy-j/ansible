@@ -41,3 +41,9 @@
       name: "PAVAN reddy g"
     ansible.builtin.debug:
       msg: "Hello {{ name | upper}}"
+
+  - name: Print min and max
+    vars:
+      Numbers: "1, 345, 234, 3456, 1234567"
+    ansible.builtin.debug:
+      msg: "min is: {{ Numbers | min }} max is: {{ Numbers | max }}"
