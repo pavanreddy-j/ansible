@@ -6,8 +6,17 @@
     ansible.builtin.debug:
       msg: "Hello {{ person | default('pavan') }}"
 
-  - name: convert string to list
+  - name: convert string into list
     vars:
-      fruits: "apple, banana, orange" #string
+      fruits: "apple, banana, mango, orange" #string
     ansible.builtin.debug:
-      msg: " Fruits are: {{ fruits | split(',') }}"
+      msg: "Fruits are: {{ fruits | split(',') }}"
+
+  - name: Convert maps into list
+    vars:
+      course:
+        name: ansible
+        duration: 10hrs
+        traniee: Sivakumar
+    ansible.builtin.debug:
+      msg: "Course info: {{ course | dict2items }}"
