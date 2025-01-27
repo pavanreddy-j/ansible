@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../shell-script"
+		},
+		{
+			"path": "../expense-shell"
+		}
+	],
+	"settings": {}
+}
