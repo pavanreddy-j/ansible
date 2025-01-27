@@ -1,6 +1,7 @@
 - name: create ec2 and r53 records
   hosts: local
   connection: local
+  become: yes
   vars:
     subnet_id: subnet-08f7091e904498495
     sg_id: sg-0858b522e979486c3
@@ -26,4 +27,3 @@
       image_id: "{{ ami_id }}"
       instance_type: "{{ instance_type }}"
     loop: "{{ instances }}"
-    
