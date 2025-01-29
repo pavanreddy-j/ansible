@@ -1,4 +1,4 @@
-- name: nginx instillization
+- name: nginx installation
   hosts: all
   become: yes
   tasks:
