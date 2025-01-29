@@ -1,5 +1,5 @@
 - name: nginx instillization
-  hosts: nginx
+  hosts: all
   become: yes
   tasks:
     ansible.builtin.package:
